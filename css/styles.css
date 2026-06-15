@@ -16,7 +16,7 @@
   --gray: #8B8B8B;
   --gray-dark: #5A5A5A;
   --text: #3D3D3D;
-  --text-light: #6B6B6B;
+  --text-light: #595959;
   --whatsapp: #25D366;
   --whatsapp-dark: #1DA851;
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
@@ -33,8 +33,33 @@
   --header-height: 100px;
 }
 
+/* ---------- Skip Navigation ---------- */
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 10000;
+  padding: 12px 24px;
+  background: var(--gold-dark);
+  color: white;
+  font-weight: 600;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-nav:focus {
+  top: 0;
+}
+
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Focus styles (WCAG 2.1 AA) */
+*:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
 
 html {
   scroll-behavior: smooth;
@@ -185,7 +210,8 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.4rem); }
   transition: opacity 0.2s, visibility 0.2s;
   z-index: 100;
 }
-.nav-dropdown:hover .nav-dropdown-menu {
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
@@ -391,20 +417,33 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.4rem); }
 }
 
 .polaroid-dot {
-  width: 8px;
-  height: 8px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: var(--pink);
+  background: transparent;
   opacity: 0.4;
   transition: opacity 0.3s, transform 0.3s;
   cursor: pointer;
   border: none;
   padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.polaroid-dot::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pink);
 }
 
 .polaroid-dot.active {
   opacity: 1;
   transform: scale(1.3);
+}
+.polaroid-dot.active::after {
   background: var(--gold);
 }
 
