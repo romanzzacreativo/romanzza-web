@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colgantes Redondos de Maternidad — Romanzza | Bases Redondas para Hospital</title>
+  <meta name="description" content="Colgantes de maternidad en base redonda para la puerta del hospital. MDF pintado a mano con diseño personalizado. Desde $700. Monterrey, NL.">
+  <meta name="keywords" content="colgante maternidad redondo, base redonda bebe hospital, letrero redondo recien nacido, colgante circular maternidad">
+
+  <meta property="og:title" content="Colgantes Redondos de Maternidad — Romanzza">
+  <meta property="og:description" content="Colgantes redondos personalizados para darle la bienvenida a tu bebé en el hospital. Hechos a mano en Monterrey.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="https://romanzza.online/img/hero/hero-bebe-colgante.jpg">
+  <meta property="og:url" content="https://romanzza.online/catalogo/colgantes-bases-redondas.html">
+  <link rel="canonical" href="https://romanzza.online/catalogo/colgantes-bases-redondas.html">
+  <link rel="alternate" hreflang="es-MX" href="https://romanzza.online/catalogo/colgantes-bases-redondas.html">
+  <meta name="robots" content="index, follow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Colgante de Maternidad Base Redonda",
+    "description": "Colgante redondo decorativo para puerta de hospital con el nombre del bebé. Fabricado en MDF con corte láser y pintado a mano.",
+    "brand": { "@type": "Brand", "name": "Romanzza" },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "MXN",
+      "lowPrice": "700",
+      "highPrice": "850",
+      "offerCount": "19"
+    },
+    "image": "https://romanzza.online/img/productos/cat-bases-redondas.jpg"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    .catalog-hero {
+      margin-top: var(--header-height);
+      padding: 60px 0 40px;
+      background: linear-gradient(135deg, var(--pink-light) 0%, var(--cream) 100%);
+      text-align: center;
+    }
+    .catalog-hero h1 { margin-bottom: 12px; }
+    .catalog-hero p { color: var(--text-light); max-width: 600px; margin: 0 auto 24px; }
+
+    .size-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .size-tab {
+      padding: 10px 24px;
+      border-radius: var(--radius-full);
+      border: 2px solid var(--pink);
+      background: transparent;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .size-tab.active, .size-tab:hover {
+      background: var(--pink);
+      color: var(--text);
+    }
+
+    .product-detail-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 60px;
+    }
+    .product-detail-image {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: var(--radius-lg);
+      object-fit: cover;
+      background: var(--gray-light);
+    }
+    .product-detail-info h2 {
+      margin-bottom: 8px;
+    }
+    .product-detail-info .price-big {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--gold-dark);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .product-detail-info .price-big small {
+      font-size: 0.9rem;
+      color: var(--gray);
+      font-weight: 400;
+    }
+    .product-specs {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+    .product-specs li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.9rem;
+      display: flex;
+      gap: 8px;
+    }
+    .product-specs li span:first-child {
+      font-weight: 600;
+      min-width: 120px;
+    }
+
+    .gender-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .gender-tab {
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      border: 2px solid var(--gold);
+      background: transparent;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .gender-tab.active, .gender-tab:hover {
+      background: var(--gold);
+      color: white;
+    }
+    .product-card.hidden {
+      display: none;
+    }
+
+    .product-card-carousel {
+      position: relative;
+      overflow: hidden;
+    }
+    .product-card-carousel .carousel-img {
+      display: none;
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+    .product-card-carousel .carousel-img.active {
+      display: block;
+    }
+    .carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+    }
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .carousel-dot.active {
+      background: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .product-detail-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="../" class="logo">
+        <img src="../img/logo-romanzza.jpg" alt="Romanzza" class="logo-img">
+        <span class="logo-text">Romanzza</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="../">Inicio</a>
+        <a href="../catalogo/">Catálogo</a>
+        <div class="nav-dropdown">
+          <a href="../catalogo/colgantes-maternidad.html">Colgantes ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="../catalogo/colgantes-maternidad.html">Todos los Colgantes</a>
+            <a href="../catalogo/colgantes-marcos.html">Marcos</a>
+            <a href="../catalogo/colgantes-atrapasueños.html">Atrapasueños</a>
+            <a href="../catalogo/colgantes-bases-redondas.html">Bases Redondas</a>
+            <a href="../catalogo/colgantes-iniciales.html">Iniciales con Nombre</a>
+            <a href="../catalogo/colgantes-tablones.html">Tablones</a>
+          </div>
+        </div>
+        <a href="../otros-productos.html">Otros Productos</a>
+        <a href="../nosotros.html">Nosotros</a>
+        <a href="../blog/">Blog</a>
+        <a href="../#contacto">Contacto</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CATALOG HERO -->
+  <section class="catalog-hero">
+    <div class="container">
+      <span class="hero-badge">Diseño circular</span>
+      <h1>Colgantes Base Redonda</h1>
+      <p>Colgante redondo para puerta de hospital. Diseño circular con personaje y nombre de tu bebé.</p>
+      <p style="font-style:italic; font-size:0.95rem; color:var(--gold-dark); max-width:550px; margin:0 auto 24px;">Bases circulares con cualquier personaje — tú eliges el diseño.</p>
+      <div class="size-tabs">
+        <button class="size-tab active">30 cm — $700</button>
+        <button class="size-tab">40 cm — $850</button>
+      </div>
+      <div class="gender-tabs">
+        <button class="gender-tab active" data-filter="todos">Todos</button>
+        <button class="gender-tab" data-filter="nina">Para Niña</button>
+        <button class="gender-tab" data-filter="nino">Para Niño</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="section">
+    <div class="container">
+      <div class="products-grid">
+
+        <div class="product-card" data-gender="nina">
+          <span class="product-badge">Popular</span>
+          <img src="../img/productos/sirenita.jpg" alt="Colgante base redonda Sirenita para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Sirenita</h3>
+            <p class="product-card-desc">Base redonda con sirenita, corales y burbujas. Tonos rosa y morado con detalles marinos.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Sirenita%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/stitch.jpg" alt="Colgante base redonda Stitch para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Stitch</h3>
+            <p class="product-card-desc">Base redonda con Stitch bebé y hojas tropicales. Tonos azul con detalles verdes.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Stitch%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/base-redonda-jirafita.jpg" alt="Colgante base redonda Jirafita con flores para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Jirafita con Flores</h3>
+            <p class="product-card-desc">Jirafita tierna con flores y mariposas. Colores rosa y dorado.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Jirafita%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/base-redonda-arcoiris.jpg" alt="Colgante base redonda Arcoíris para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Arcoíris con Nubes</h3>
+            <p class="product-card-desc">Base redonda con arcoíris colorido, nubes y estrellas doradas. Moño rosa vibrante.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Arco%C3%ADris%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/base-redonda-elefantito.jpg" alt="Colgante base redonda Elefantito para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Elefantito con Luna</h3>
+            <p class="product-card-desc">Base redonda con elefantito tierno, luna, nubes y estrellas. Tonos azul pastel.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Elefantito%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/base-redonda-conejita.jpg" alt="Colgante base redonda Conejita para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Conejita en la Luna</h3>
+            <p class="product-card-desc">Base redonda con conejita sobre luna plateada, nubes y estrellas. Tonos rosa pastel.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Conejita%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/base-redonda-mariposas.jpg" alt="Colgante base redonda Mariposas para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Mariposas con Flores</h3>
+            <p class="product-card-desc">Base redonda con mariposas, flores y hojas en tonos morado y lila. Diseño elegante y floral.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Mariposas%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/base-redonda-osito.jpg" alt="Colgante base redonda Osito para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Osito con Luna</h3>
+            <p class="product-card-desc">Base redonda con osito, moño, luna y estrellas espejo. Tonos azul y gris.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Osito%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/base-redonda-perritos.jpg" alt="Colgante base redonda Perritos para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Perritos</h3>
+            <p class="product-card-desc">Base redonda con perritos Chihuahua y Schnauzer, nubes. Diseño único y divertido.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Perritos%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/base-redonda-luna.jpg" alt="Colgante base redonda Luna para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Luna y Estrellas</h3>
+            <p class="product-card-desc">Base redonda con luna, nubes y estrellas doradas. Tonos rosa pastel suave.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Luna%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/base-redonda-bailarina.jpg" alt="Colgante base redonda Bailarina para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Bailarina</h3>
+            <p class="product-card-desc">Base redonda con silueta de bailarina dorada, corazones y tutú de tul. Estilo clásico.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Bailarina%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <div class="product-card-carousel">
+            <img src="../img/productos/base-redonda-sirenita-corales.jpg" alt="Colgante base redonda Sirenita con Corales variante 1" class="product-card-image carousel-img active">
+            <img src="../img/productos/base-redonda-sirenita-corales-2.jpg" alt="Colgante base redonda Sirenita con Corales variante 2" class="product-card-image carousel-img">
+            <img src="../img/productos/base-redonda-sirenita-corales-3.jpg" alt="Colgante base redonda Sirenita con Corales variante 3" class="product-card-image carousel-img">
+            <img src="../img/productos/base-redonda-sirenita-corales-4.jpg" alt="Colgante base redonda Sirenita con Corales variante 4" class="product-card-image carousel-img">
+            <img src="../img/productos/base-redonda-sirenita-corales-5.jpg" alt="Colgante base redonda Sirenita con Corales variante 5" class="product-card-image carousel-img">
+            <img src="../img/productos/base-redonda-sirenita-corales-6.jpg" alt="Colgante base redonda Sirenita con Corales variante 6" class="product-card-image carousel-img">
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm · 6 variantes</span>
+            <h3 class="product-card-title">Sirenita con Corales</h3>
+            <p class="product-card-desc">Base redonda con cola de sirena, corales y animales marinos. Diferentes combinaciones de colores.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Sirenita%20con%20Corales%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <span class="product-badge">Nuevo</span>
+          <div class="product-card-carousel">
+            <img src="../img/productos/base-redonda-conejita-mariposas-1.jpg" alt="Colgante base redonda Conejita con Mariposas versión lila" class="product-card-image carousel-img active">
+            <img src="../img/productos/base-redonda-conejita-mariposas-2.jpg" alt="Colgante base redonda Conejita con Mariposas versión rosa" class="product-card-image carousel-img">
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm · 2 colores</span>
+            <h3 class="product-card-title">Conejita con Mariposas</h3>
+            <p class="product-card-desc">Base redonda con conejita de lado, arco de flores y mariposas. Disponible en lila y rosa.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Conejita%20con%20Mariposas%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <span class="product-badge">Nuevo</span>
+          <div class="product-card-carousel">
+            <img src="../img/productos/base-redonda-safari.jpg" alt="Colgante base redonda Safari Animales variante 1" class="product-card-image carousel-img active">
+            <img src="../img/productos/base-redonda-safari-2.jpg" alt="Colgante base redonda Safari Animales variante 2" class="product-card-image carousel-img">
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm · 2 variantes</span>
+            <h3 class="product-card-title">Safari Animales</h3>
+            <p class="product-card-desc">Base redonda con elefante, jirafa, león y hojas tropicales. Estilo safari natural en madera.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Safari%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/base-redonda-leon-jirafa.jpg" alt="Colgante base redonda León y Jirafa para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">León y Jirafa</h3>
+            <p class="product-card-desc">Base redonda con león, jirafa y hojas verdes. Diseño safari con tonos naturales y dorados.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Le%C3%B3n%20y%20Jirafa%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/base-redonda-principito.jpg" alt="Colgante base redonda Principito para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">El Principito</h3>
+            <p class="product-card-desc">Base redonda con El Principito en su planeta, zorro, flor y estrellas. Tonos azul celeste.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Principito%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/base-redonda-gatita-marie.jpg" alt="Colgante base redonda Gatita Marie Aristogatos para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Gatita Marie</h3>
+            <p class="product-card-desc">Base redonda con Gatita Marie de los Aristogatos dormida en luna de perlitas. Tonos rosa y dorado.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Gatita%20Marie%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/base-redonda-pinguina.jpg" alt="Colgante base redonda Pingüina con flores para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Pingüina con Flores</h3>
+            <p class="product-card-desc">Base redonda con pingüinita tierna, arcos de flores, mariposa y hojas. Tonos rosa y lila.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Ping%C3%BCina%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/base-redonda-colibri.jpg" alt="Colgante base redonda Colibrí para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Colibrí</h3>
+            <p class="product-card-desc">Base redonda con colibrí volando en tonos rosa y dorado. Diseño minimalista y elegante.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Base%20Redonda%20Colibr%C3%AD%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALIZATION BANNER -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="cta-banner" style="background:linear-gradient(135deg, var(--cream) 0%, var(--pink-light) 100%);">
+        <h2>Tu Personaje Favorito</h2>
+        <p>¿Buscas otro personaje o tema? Podemos hacer bases redondas con cualquier diseño que quieras.</p>
+        <a href="https://wa.me/528112569154?text=Hola!%20Quiero%20un%20colgante%20de%20base%20redonda%20con%20un%20dise%C3%B1o%20personalizado.%20" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.594-.79-6.375-2.123l-.444-.334-2.633.883.883-2.633-.334-.444A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Cuéntanos tu idea
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section class="section section-pink">
+    <div class="container">
+      <div class="section-header">
+        <h2>Detalles del Producto</h2>
+      </div>
+      <div class="product-detail-row">
+        <img src="../img/productos/sirenita.jpg" alt="Detalle de colgante base redonda Sirenita - Romanzza" class="product-detail-image">
+        <div class="product-detail-info">
+          <h2>¿Qué incluye tu colgante redondo?</h2>
+          <div class="price-big">Desde $700 <small>MXN (30cm)</small></div>
+          <ul class="product-specs">
+            <li><span>Material:</span> MDF cortado con láser, acabado pintado a mano</li>
+            <li><span>Tamaños:</span> 30cm ($700) o 40cm ($850)</li>
+            <li><span>Incluye:</span> Hasta 2 nombres, pregunta por otros diseños</li>
+            <li><span>Acabado:</span> Pintado a mano con pintura acrílica</li>
+            <li><span>Extras:</span> Luces LED (+$350), Cubierta de acrílico (+$400), Express (+$200)</li>
+            <li><span>Entrega:</span> 12 días hábiles. Express 3 días (+$200)</li>
+            <li><span>Zona:</span> Monterrey y área metropolitana</li>
+          </ul>
+          <a href="https://wa.me/528112569154?text=Hola!%20Quiero%20cotizar%20un%20colgante%20de%20Base%20Redonda%20personalizado.%20" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.594-.79-6.375-2.123l-.444-.334-2.633.883.883-2.633-.334-.444A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Cotizar mi colgante redondo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>¿Tu bebé viene en camino?</h2>
+        <p>Pide tu colgante con 2-3 semanas de anticipación para tenerlo listo el gran día.</p>
+        <a href="https://wa.me/528112569154?text=Hola!%20Mi%20beb%C3%A9%20viene%20en%20camino%20y%20quiero%20pedir%20un%20colgante%20de%20Base%20Redonda." class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.594-.79-6.375-2.123l-.444-.334-2.633.883.883-2.633-.334-.444A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Hacer mi pedido ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">Romanzza</span>
+          <p>Taller de corte láser en Monterrey, NL. Materializamos tus ideas creativas en MDF, acrílico y más.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com/romanzza.creativo" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://instagram.com/romanzza.creativo" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://wa.me/528112569154" target="_blank" rel="noopener" aria-label="WhatsApp">wa</a>
+          </div>
+        </div>
+        <div>
+          <h4>Colgantes</h4>
+          <ul class="footer-links">
+            <li><a href="colgantes-marcos.html">Marcos</a></li>
+            <li><a href="colgantes-bases-redondas.html">Bases Redondas</a></li>
+            <li><a href="colgantes-atrapasueños.html">Atrapasueños</a></li>
+            <li><a href="colgantes-iniciales.html">Iniciales con Nombre</a></li>
+            <li><a href="colgantes-tablones.html">Tablones</a></li>
+            <li><a href="colgantes-maternidad.html">Ver todos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Más Productos</h4>
+          <ul class="footer-links">
+            <li><a href="../otros-productos.html">Otros Productos</a></li>
+            <li><a href="../nosotros.html">Nosotros</a></li>
+            <li><a href="../blog/">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          

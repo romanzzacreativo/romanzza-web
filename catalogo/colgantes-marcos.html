@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colgantes de Maternidad tipo Marco — Romanzza | Letreros para Hospital</title>
+  <meta name="description" content="Colgantes de maternidad en marco cuadrado para la puerta del hospital. MDF pintado a mano con diseño personalizado. Desde $700. Monterrey, NL.">
+  <meta name="keywords" content="colgantes de maternidad marco, letrero bebe hospital marco, colgante maternidad cuadrado, letrero recien nacido personalizado">
+
+  <meta property="og:title" content="Colgantes de Maternidad tipo Marco — Romanzza">
+  <meta property="og:description" content="Marcos decorativos personalizados para darle la bienvenida a tu bebé en el hospital. Hechos a mano en Monterrey.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="https://romanzza.online/img/hero/hero-bebe-colgante.jpg">
+  <meta property="og:url" content="https://romanzza.online/catalogo/colgantes-marcos.html">
+  <link rel="canonical" href="https://romanzza.online/catalogo/colgantes-marcos.html">
+  <link rel="alternate" hreflang="es-MX" href="https://romanzza.online/catalogo/colgantes-marcos.html">
+  <meta name="robots" content="index, follow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Colgante de Maternidad tipo Marco",
+    "description": "Marco decorativo para puerta de hospital con el nombre del bebé. Fabricado en MDF con corte láser y pintado a mano.",
+    "brand": { "@type": "Brand", "name": "Romanzza" },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "MXN",
+      "lowPrice": "700",
+      "highPrice": "850",
+      "offerCount": "16"
+    },
+    "image": "https://romanzza.online/img/productos/osito-corona.jpg"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    .catalog-hero {
+      margin-top: var(--header-height);
+      padding: 60px 0 40px;
+      background: linear-gradient(135deg, var(--pink-light) 0%, var(--cream) 100%);
+      text-align: center;
+    }
+    .catalog-hero h1 { margin-bottom: 12px; }
+    .catalog-hero p { color: var(--text-light); max-width: 600px; margin: 0 auto 24px; }
+
+    .size-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .size-tab {
+      padding: 10px 24px;
+      border-radius: var(--radius-full);
+      border: 2px solid var(--pink);
+      background: transparent;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .size-tab.active, .size-tab:hover {
+      background: var(--pink);
+      color: var(--text);
+    }
+
+    .product-detail-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 60px;
+    }
+    .product-detail-image {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: var(--radius-lg);
+      object-fit: cover;
+      background: var(--gray-light);
+    }
+    .product-detail-info h2 {
+      margin-bottom: 8px;
+    }
+    .product-detail-info .price-big {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--gold-dark);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .product-detail-info .price-big small {
+      font-size: 0.9rem;
+      color: var(--gray);
+      font-weight: 400;
+    }
+    .product-specs {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+    .product-specs li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.9rem;
+      display: flex;
+      gap: 8px;
+    }
+    .product-specs li span:first-child {
+      font-weight: 600;
+      min-width: 120px;
+    }
+
+    .gender-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .gender-tab {
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      border: 2px solid var(--gold);
+      background: transparent;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .gender-tab.active, .gender-tab:hover {
+      background: var(--gold);
+      color: white;
+    }
+    .product-card.hidden {
+      display: none;
+    }
+
+    .product-card-carousel {
+      position: relative;
+      overflow: hidden;
+    }
+    .product-card-carousel .carousel-img {
+      display: none;
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+    .product-card-carousel .carousel-img.active {
+      display: block;
+    }
+    .carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+    }
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .carousel-dot.active {
+      background: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .product-detail-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="../" class="logo">
+        <img src="../img/logo-romanzza.jpg" alt="Romanzza" class="logo-img">
+        <span class="logo-text">Romanzza</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="../">Inicio</a>
+        <a href="../catalogo/">Catálogo</a>
+        <div class="nav-dropdown">
+          <a href="../catalogo/colgantes-maternidad.html">Colgantes ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="../catalogo/colgantes-maternidad.html">Todos los Colgantes</a>
+            <a href="../catalogo/colgantes-marcos.html">Marcos</a>
+            <a href="../catalogo/colgantes-atrapasueños.html">Atrapasueños</a>
+            <a href="../catalogo/colgantes-bases-redondas.html">Bases Redondas</a>
+            <a href="../catalogo/colgantes-iniciales.html">Iniciales con Nombre</a>
+            <a href="../catalogo/colgantes-tablones.html">Tablones</a>
+          </div>
+        </div>
+        <a href="../otros-productos.html">Otros Productos</a>
+        <a href="../nosotros.html">Nosotros</a>
+        <a href="../blog/">Blog</a>
+        <a href="../#contacto">Contacto</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CATALOG HERO -->
+  <section class="catalog-hero">
+    <div class="container">
+      <span class="hero-badge">Marcos decorativos</span>
+      <h1>Colgantes tipo Marco</h1>
+      <p>Marco decorativo para puerta de hospital. Diseño cuadrado con personaje y nombre de tu bebé, pintado a mano.<br>Estos son solo algunos ejemplos — podemos hacer marcos con cualquier diseño y personaje que imagines.</p>
+      <div class="size-tabs">
+        <button class="size-tab active">30 cm — $700</button>
+        <button class="size-tab">40 cm — $850</button>
+        <button class="size-tab">40x30 cm — $850</button>
+      </div>
+      <div class="gender-tabs">
+        <button class="gender-tab active" data-filter="todos">Todos</button>
+        <button class="gender-tab" data-filter="nina">Para Niña</button>
+        <button class="gender-tab" data-filter="nino">Para Niño</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="section">
+    <div class="container">
+      <div class="products-grid">
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/osito-corona.jpg" alt="Colgante tipo marco Osito con Corona para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Osito con Corona</h3>
+            <p class="product-card-desc">Osito adorable con corona dorada en marco cuadrado. Perfecto para niño.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Osito%20con%20Corona%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/unicornio-arcoiris.jpg" alt="Colgante tipo marco Unicornio Arcoíris para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Unicornio Arcoíris</h3>
+            <p class="product-card-desc">Unicornio mágico con arcoíris y nubes en marco cuadrado. Ideal para niña.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Unicornio%20Arco%C3%ADris%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/safari.jpg" alt="Colgante tipo marco Safari para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Safari</h3>
+            <p class="product-card-desc">Animalitos de safari en marco cuadrado. León, jirafa y elefante para los aventureros.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Safari%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/elefante-nubes.jpg" alt="Colgante tipo marco Elefantito para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Elefantito</h3>
+            <p class="product-card-desc">Elefante tierno con nubes y estrellas en marco cuadrado. Colores pastel.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Elefantito%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/bailarina-perlitas.jpg" alt="Colgante tipo marco Bailarina para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Bailarina</h3>
+            <p class="product-card-desc">Bailarina elegante con detalles de perlas en marco cuadrado. Diseño clásico para niña.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Bailarina%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/corona-estrellas.jpg" alt="Colgante tipo marco Corona de Princesa para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Corona de Princesa</h3>
+            <p class="product-card-desc">Corona dorada con flores y estrellas en marco cuadrado. Para las princesas.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Corona%20de%20Princesa%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/arcoiris-sofia.jpg" alt="Colgante tipo marco Arcoíris para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Arcoíris</h3>
+            <p class="product-card-desc">Arcoíris colorido con nubes en marco cuadrado. Alegría y color para tu bebé.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Arco%C3%ADris%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/luna-marco-nina.jpg" alt="Colgante tipo marco Luna Marco para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Luna Marco</h3>
+            <p class="product-card-desc">Marco con luna y estrellas</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Luna%20Marco%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/minnie-marco.jpg" alt="Colgante tipo marco Minnie Marco para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Minnie Marco</h3>
+            <p class="product-card-desc">Marco con Minnie Mouse</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Minnie%20Marco%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/mickey-nubes.jpg" alt="Colgante tipo marco Mickey Nubes para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Mickey Nubes</h3>
+            <p class="product-card-desc">Marco con Mickey y nubes</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Mickey%20Nubes%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="unisex">
+          <img src="../img/productos/marco-ecografia.jpg" alt="Colgante tipo marco Marco Ecografía unisex" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Marco Ecografía</h3>
+            <p class="product-card-desc">Marco para foto de ecografía</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Ecograf%C3%ADa%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/osita-dormilona.jpg" alt="Colgante tipo marco Osita Dormilona para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Osita Dormilona</h3>
+            <p class="product-card-desc">Marco con osita dormilona</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Osita%20Dormilona%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/osito-luna.jpg" alt="Colgante tipo marco Osito Luna para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Osito Luna</h3>
+            <p class="product-card-desc">Marco con osito y luna</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Osito%20Luna%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/elefantita-globo.jpg" alt="Colgante tipo marco Elefantita Globo para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Elefantita Globo</h3>
+            <p class="product-card-desc">Marco con elefantita y globo</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Elefantita%20Globo%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/conejita-cute.jpg" alt="Colgante tipo marco Conejita para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Conejita</h3>
+            <p class="product-card-desc">Marco con conejita adorable</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Conejita%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/luna-david.jpg" alt="Colgante tipo marco Luna David para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">30 cm</span>
+            <h3 class="product-card-title">Luna David</h3>
+            <p class="product-card-desc">Marco con luna y nombre David</p>
+            <div class="product-card-footer">
+              <span class="product-price">$700 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Luna%20David%2030cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/elefantito-cute.jpg" alt="Colgante tipo marco Elefantito Cute para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Elefantito Cute</h3>
+            <p class="product-card-desc">Marco cuadrado con elefantito y perlitas azules. Moño azul y tarjetas de datos del bebé.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Elefantito%20Cute%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/corazon-perlitas.jpg" alt="Colgante tipo marco Corazón Perlitas para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Corazón Perlitas</h3>
+            <p class="product-card-desc">Marco con corazón de perlitas y moño rosa. Detalles delicados y románticos con tarjetas de datos.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Coraz%C3%B3n%20Perlitas%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <img src="../img/productos/dinosaurio-luz.jpg" alt="Colgante tipo marco Dinosaurio con Luz para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Dinosaurio con Luz</h3>
+            <p class="product-card-desc">Marco cuadrado con dinosaurio, hojas monstera y luces LED. Diseño divertido y original.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Dinosaurio%20con%20Luz%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <img src="../img/productos/ornamenta-luz.jpg" alt="Colgante tipo marco Ornamenta con Luz para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Ornamenta con Luz</h3>
+            <p class="product-card-desc">Marco ornamental con luces LED y corona de perlitas. Diseño elegante con detalles luminosos.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20tipo%20Marco%20Ornamenta%20con%20Luz%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="unisex">
+          <span class="product-badge">Nuevo</span>
+          <div class="product-card-carousel">
+            <img src="../img/productos/marco-elefante-globo-1.jpg" alt="Elefante en Globo Aerostático dorado" class="product-card-image carousel-img active">
+            <img src="../img/productos/marco-elefante-globo-2.jpg" alt="Elefante en Globo Aerostático azul" class="product-card-image carousel-img">
+            <img src="../img/productos/marco-elefante-globo-3.jpg" alt="Elefante en Globo Aerostático rosa" class="product-card-image carousel-img">
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm · 3 colores</span>
+            <h3 class="product-card-title">Elefante en Globo</h3>
+            <p class="product-card-desc">Elefantito en globo aerostático de perlitas, nubes y estrellas. Disponible en dorado, azul y rosa.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$950 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Marco%20Elefante%20en%20Globo%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <span class="product-badge">Nuevo</span>
+          <div class="product-card-carousel">
+            <img src="../img/productos/marco-bosque-1.jpg" alt="Animales del Bosque variante verde" class="product-card-image carousel-img active">
+            <img src="../img/productos/marco-bosque-2.jpg" alt="Animales del Bosque variante azul" class="product-card-image carousel-img">
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm · 2 variantes</span>
+            <h3 class="product-card-title">Animales del Bosque</h3>
+            <p class="product-card-desc">Marco con oso, mapache, venado y zorro en bosque. Diseño de naturaleza con hojas y árboles.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$950 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Marco%20Animales%20del%20Bosque%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/marco-leon-perlitas.jpg" alt="Colgante tipo marco León con Perlitas para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">León con Perlitas</h3>
+            <p class="product-card-desc">León tierno con melena de perlitas doradas. Fondo amarillo pastel, estilo elegante.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$950 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Marco%20Le%C3%B3n%20con%20Perlitas%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/marco-elefanta-flores.jpg" alt="Colgante tipo marco Elefanta con Flores para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Elefanta con Flores</h3>
+            <p class="product-card-desc">Elefanta tierna con corona y arco de flores lilas. Moño lila a juego, diseño delicado.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$950 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Marco%20Elefanta%20con%20Flores%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nino">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/marco-tigre-futbol.jpg" alt="Colgante tipo marco Tigre Futbolista para niño" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Tigre Futbolista</h3>
+            <p class="product-card-desc">Tigre con balón de fútbol y luces LED. Marco cuadrado con moño azul. Perfecto para deportistas.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$950 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Marco%20Tigre%20Futbolista%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-gender="nina">
+          <span class="product-badge">Nuevo</span>
+          <img src="../img/productos/marco-conejita-globo.jpg" alt="Colgante tipo marco Conejita en Globo para niña" class="product-card-image">
+          <div class="product-card-body">
+            <span class="product-card-category">40 cm</span>
+            <h3 class="product-card-title">Conejita en Globo</h3>
+            <p class="product-card-desc">Conejita en globo aerostático de perlitas, nubes y estrellas. Marco cuadrado rosa con moño.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$950 <small>MXN</small></span>
+              <a href="https://wa.me/528112569154?text=Hola!%20Me%20interesa%20el%20colgante%20Marco%20Conejita%20en%20Globo%2040cm.%20Nombre%20del%20beb%C3%A9%3A%20" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALIZATION BANNER -->
+  <section class="section section-white">
+    <div class="container" style="text-align:center;max-width:800px;">
+      <h2 style="margin-bottom:16px;">¿Tienes otro diseño en mente?</h2>
+      <p style="font-size:1.1rem;color:var(--text-light);margin-bottom:24px;">
+        Podemos hacer marcos con <strong>cualquier personaje, tema o diseño</strong> que te imagines.
+        Solo cuéntanos tu idea y la hacemos realidad.
+      </p>
+      <a href="https://wa.me/528112569154?text=Hola!%20Quiero%20un%20marco%20de%20maternidad%20con%20un%20dise%C3%B1o%20personalizado.%20" class="btn btn-whatsapp" target="_blank" rel="noopener">Cuéntanos tu idea</a>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section class="section section-pink">
+    <div class="container">
+      <div class="section-header">
+        <h2>Detalles del Producto</h2>
+      </div>
+      <div class="product-detail-row">
+        <img src="../img/productos/osito-corona.jpg" alt="Detalle de colgante tipo marco Romanzza" class="product-detail-image">
+        <div class="product-detail-info">
+          <h2>¿Qué incluye tu colgante tipo marco?</h2>
+          <div class="price-big">Desde $700 <small>MXN (30cm)</small></div>
+          <ul class="product-specs">
+            <li><span>Material:</span> MDF (polvo de madera comprimida), acabado pintado a mano</li>
+            <li><span>Tamaños:</span> 30cm ($700), 40cm ($850), 40x30cm ($850)</li>
+            <li><span>Incluye:</span> Hasta 2 nombres, diseño personalizado, colgantes Nací/Medí/Pesé</li>
+            <li><span>Variantes:</span> Esquinas redondeadas, horizontal, vertical, marco interior opcional</li>
+            <li><span>Extras:</span> Perlas o hilo (+$100), Luces LED (+$350), Express (+$200)</li>
+            <li><span>Entrega:</span> 12 días hábiles. Express 3 días (+$200)</li>
+            <li><span>Zona:</span> Monterrey y área metropolitana</li>
+          </ul>
+          <a href="https://wa.me/528112569154?text=Hola!%20Quiero%20cotizar%20un%20colgante%20tipo%20Marco%20personalizado.%20" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.594-.79-6.375-2.123l-.444-.334-2.633.883.883-2.633-.334-.444A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Cotizar mi marco personalizado
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>¿Tu bebé viene en camino?</h2>
+        <p>Pide tu colgante con 2-3 semanas de anticipación para tenerlo listo el gran día.</p>
+        <a href="https://wa.me/528112569154?text=Hola!%20Mi%20beb%C3%A9%20viene%20en%20camino%20y%20quiero%20pedir%20un%20colgante%20tipo%20Marco." class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.594-.79-6.375-2.123l-.444-.334-2.633.883.883-2.633-.334-.444A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Hacer mi pedido ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">Romanzza</span>
+          <p>Taller de corte láser en Monterrey, NL. Materializamos tus ideas creativas en MDF, acrílico y más.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com/romanzza.creativo" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://instagram.com/romanzza.creativo" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://wa.me/528112569154" target="_blank" rel="noopener" aria-label="WhatsApp">wa</a>
+          </div>
+        </div>
+        <div>
+          <h4>Colgantes</h4>
+          <ul class="footer-links">
+            <li><a href="colgantes-marcos.html">Marcos</a></li>
+            <li><a href="colgantes-bases-redondas.html">Bases Redondas</a></li>
+            <li><a href="colgantes-atrapasueños.html">Atrapasueños</a></li>
+            <li><a href="colgantes-iniciales.html">Iniciales con Nombre</a></li>
+            <li><a href="colgantes-tablones.html">Tablones</a></li>
+            <li><a href="colgantes-maternidad.html">Ver todos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Más Productos</h4>
+          <ul class="footer-links">
+            <li><a href="../otros-productos.html">Otros Productos</a></li>
+            <li><a href="../nosotros.html">Nosotros</a></li>
+            <li><a href="../blog/">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/528112569154" target="_blank" rel="noopener">WhatsApp: 811 256 9154</a></li>
+            <li><a href="https://facebook.com/romanzza.creativo" target="_blank" rel="noopener">Facebook: @romanzza.creativo</a></li>
+            <li>Monterrey, Nuevo León, México</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Romanzza. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/528112569154?text=Hola!%20Tengo%20una%20pregunta%20sobre%20colgantes%20tipo%20Marco." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.594-.79-6.375-2.123l-.444-.334-2.633.883.883-2.633-.334-.444A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </a>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Gender filter
+    document.querySelectorAll('.gender-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.gender-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.dataset.filter;
+        document.querySelectorAll('.product-card[data-gender]').forEach(card => {
+          if (filter === 'todos' || card.dataset.gender === filter || card.dataset.gender === 'unisex') {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    if (window.location.hash === '#nina' || window.location.hash === '#nino') {
+      const gender = window.location.hash.slice(1);
+      document.querySelector(`.gender-tab[data-filter="${gender}"]`)?.click();
+    }
+
+    // Product card image carousel
+    document.querySelectorAll('.product-card-carousel').forEach(carousel => {
+      const imgs = carousel.querySelectorAll('.carousel-img');
+      const dots = carousel.querySelectorAll('.carousel-dot');
+      let current = 0;
+      const show = (i) => {
+        imgs.forEach(img => img.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        imgs[i].classList.add('active');
+        dots[i].classList.add('active');
+        current = i;
+      };
+      dots.forEach((dot, i) => dot.addEv
