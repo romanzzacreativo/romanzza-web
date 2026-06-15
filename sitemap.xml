@@ -61,6 +61,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://romanzza.online/contacto.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://romanzza.online/blog/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
