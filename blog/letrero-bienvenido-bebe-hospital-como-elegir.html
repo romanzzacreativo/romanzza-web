@@ -88,6 +88,13 @@ a { color: #9b6b8e; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .back-link { display: inline-block; margin-top: 2em; padding: 0.6em 1.2em; background: #9b6b8e; color: white; border-radius: 6px; }
 .back-link:hover { background: #7b6b8e; text-decoration: none; }
+
+    .related-articles { max-width: 740px; margin: 0 auto; padding: 0 20px 60px; }
+    .related-articles h3 { font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 20px; color: var(--text-dark); }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .related-card { display: block; padding: 20px; background: var(--cream); border-radius: var(--radius-md); text-decoration: none; color: var(--text-dark); font-weight: 500; }
+    .related-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    @media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -183,6 +190,15 @@ a:hover { text-decoration: underline; }
 
 <a href="index.html" class="back-link">← Ver más artículos de Romanzza</a>
 
+
+
+<section class="related-articles">
+  <h3>También te puede interesar</h3>
+  <div class="related-grid">
+  <a href="bienvenido-bebe-ideas-de-carteles.html" class="related-card">Bienvenido Bebé: Ideas de Carteles de Bienvenida</a>
+  <a href="cartel-bienvenida-bebe-nena.html" class="related-card">Cartel de Bienvenida para Bebé Nena</a>
+  </div>
+</section>
 </article>
 
 </body>

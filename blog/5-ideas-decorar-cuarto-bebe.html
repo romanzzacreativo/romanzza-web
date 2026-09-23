@@ -166,6 +166,41 @@
       .article-hero img { height: 260px; }
       .article-hero-overlay h1 { font-size: 1.5rem; }
     }
+  
+    .related-articles {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+    .related-articles h3 {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .related-card {
+      display: block;
+      padding: 20px;
+      background: var(--cream);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .related-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    @media (max-width: 768px) {
+      .related-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -281,6 +316,17 @@
   </article>
 
   </main>
+
+  <!-- RELATED -->
+  <section class="related-articles">
+    <h3>También te puede interesar</h3>
+    <div class="related-grid">
+      <a href="cuarto-montessori-bebe-guia-2026.html" class="related-card">Cuarto Montessori para Bebé: Guía Práctica 2026</a>
+      <a href="paletas-color-cuarto-bebe-2026.html" class="related-card">Paletas de Color para el Cuarto del Bebé en 2026</a>
+      <a href="bienvenido-bebe-ideas-de-carteles.html" class="related-card">Bienvenido Bebé: Ideas de Carteles de Bienvenida</a>
+      <a href="colgantes-decorativos-puertas-maternidad.html" class="related-card">Colgantes Decorativos para Puertas de Maternidad</a>
+    </div>
+  </section>
 
   <!-- FOOTER -->
       <footer class="footer" id="contacto">

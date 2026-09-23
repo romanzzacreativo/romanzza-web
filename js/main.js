@@ -71,3 +71,32 @@ document.querySelectorAll('.nav a').forEach(link => {
     link.classList.add('active');
   }
 });
+
+// ============================================
+// Catálogo — filtro Todos / Para Niña / Para Niño
+// ============================================
+const genderTabs = document.querySelectorAll('.gender-tab');
+
+if (genderTabs.length > 0) {
+  const productCards = document.querySelectorAll('.product-card[data-gender]');
+  const productsGrid = document.querySelector('.products-grid');
+
+  genderTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const filter = tab.dataset.filter;
+
+      genderTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      productCards.forEach(card => {
+        const show = filter === 'todos' || card.dataset.gender === filter;
+        card.classList.toggle('hidden', !show);
+      });
+
+      // Al filtrar, llevar la vista a la cuadrícula de productos
+      if (productsGrid && filter !== 'todos') {
+        productsGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+}
